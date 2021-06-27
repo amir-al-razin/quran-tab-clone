@@ -11,16 +11,19 @@
     "prettify": "prettier --write src"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.13",
     "@chakra-ui/react": "^1.6.3",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
     "@fontsource/lexend": "^4.4.5",
     "framer-motion": "^4.1.17",
+    "moment": "^2.29.1",
     "next": "^11.0.0",
     "next-pwa": "^5.2.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^3.4.2",
