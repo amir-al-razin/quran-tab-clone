@@ -1,5 +1,7 @@
 import { Box, Flex, Heading } from "@chakra-ui/layout";
 
+import { Button } from "@chakra-ui/react";
+
 import AccessibleLink from "components/AccessibleLink";
 import ThemeToggle from "./ThemeToggle";
 
@@ -8,13 +10,14 @@ const Header = () => {
     <Flex as="header" width="full" align="center">
       <AccessibleLink href="/">
         <Heading as="h1" size="md">
-          nextchakra-starter
+          Quran Tab
         </Heading>
       </AccessibleLink>
 
-      <Box marginLeft="auto">
+      <Flex marginLeft="auto">
+        <Button mr="1">Adhkar 🤲</Button>
         <ThemeToggle />
-      </Box>
+      </Flex>
     </Flex>
   );
 };

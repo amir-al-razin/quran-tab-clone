@@ -15,6 +15,12 @@ const customTheme = extendTheme({
     //   500: "#00838e",
     //   300: "#4fb3be",
     // },
+    blackops:{
+      200:"rgba(0,0,0,0.2)"
+    },
+    whiteops:{
+      200:"rgba(255,255,255,0.2)"
+    }
   },
   components: {
     /** Example */
