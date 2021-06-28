@@ -14,14 +14,12 @@ const Time = (props: Props) => {
   const { data, error } = useSWR(
     `http://api.aladhan.com/v1/calendar?latitude=${
       location.coordinates?.lat
-    }&longitude=${
-      location.coordinates?.lng
-    }&method=4&month=${new Date().getMonth()}&year=${new Date().getFullYear()}`,
-
+    }&longitude=${location.coordinates?.lng}&method=4&month=${
+      new Date().getMonth() + 1
+    }&year=${new Date().getFullYear()}`,
     fetcher
   );
-  const response = data?.data[new Date().getUTCMonth()].timings;
-
+  let response = data?.data[new Date().getUTCMonth()].timings;
   return (
     <Flex
       bgColor={colorMode === "light" ? "whiteops.200" : "blackops.200"}
@@ -32,7 +30,9 @@ const Time = (props: Props) => {
       align="center"
       justify="center"
     >
-      {data ? (
+      {!data && !response ? (
+        <Spinner />
+      ) : (
         Object.keys(response)
           .slice(0, -2)
           .map((n: any, i: number) => (
@@ -48,8 +48,6 @@ const Time = (props: Props) => {
               <Text>{response[n].replace(/\(.*\)/g, "")}</Text>
             </Flex>
           ))
-      ) : (
-        <Spinner />
       )}
     </Flex>
   );

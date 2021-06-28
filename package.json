@@ -23,11 +23,14 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
-    "swr": "^0.5.6"
+    "react-select": "^4.3.1",
+    "swr": "^0.5.6",
+    "zustand": "^3.5.4"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^3.4.2",
     "@types/react": "^17.0.11",
+    "@types/react-select": "^4.0.16",
     "eslint": "^7.28.0",
     "eslint-config-next": "^11.0.0",
     "prettier": "^2.3.1",
