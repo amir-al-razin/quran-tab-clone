@@ -6,11 +6,12 @@ import "@fontsource/lexend/latin.css";
 import Layout from "components/layout";
 
 import customTheme from "styles/customTheme";
-import "styles/globals.css";
+import Fonts from "styles/Fonts";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <ChakraProvider  theme={customTheme}>
+    <ChakraProvider theme={customTheme}>
+      <Fonts/>
       <Head>
         <meta
           name="viewport"

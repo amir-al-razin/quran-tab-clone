@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/layout";
+import { Flex, VStack,Text } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 
 interface Props {}
@@ -7,15 +8,20 @@ interface Props {}
 const Read = (props: Props) => {
   const { colorMode } = useColorMode();
   return (
-    <Box
-      backgroundColor={colorMode === "light" ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.2)"}
+    <VStack
+      backgroundColor={colorMode === "light" ? "whiteops.200" : "blackops.200"}
       padding={4}
       borderRadius={4}
     >
-      <Box d="flex" alignItems="center" fontSize="sm">
-        This is a Next.js app with Chakra-UI and TypeScript setup.
-      </Box>
-    </Box>
+      <Text  fontSize="4xl" fontFamily="madani">
+        إِنَّ اللَّهَ لَا يَخْفَىٰ عَلَيْهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي
+        السَّمَاءِ
+      </Text>
+      <Text fontSize="xl" fontWeight="medium">
+        Indeed nothing is hidden from Allah, neither in the earth nor in the
+        heavens.
+      </Text>
+    </VStack>
   );
 };
 

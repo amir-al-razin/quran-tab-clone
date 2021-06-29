@@ -8,7 +8,7 @@ const Footer = () => {
 
       <Flex align="center">
       <IconButton mr="1" aria-label="settings" icon={<SettingsIcon fontSize="xl" />} />
-        <Text>
+        <Text fontWeight="medium">
           {new Date().getFullYear()} -{" "}
           <Link href="https://amir.dev" isExternal>
             amir.dev
