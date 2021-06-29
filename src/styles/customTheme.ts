@@ -1,12 +1,13 @@
 import { theme, extendTheme } from "@chakra-ui/react";
 
 const customTheme = extendTheme({
-  initialColorMode:'dark',
-  useSystemColorMode:false,
+  initialColorMode: "dark",
+  useSystemColorMode: false,
   fonts: {
     ...theme.fonts,
     body: "Lexend, sans-serif",
     heading: "Lexend, serif",
+    madani: "Madani",
   },
   colors: {
     ...theme.colors,
@@ -17,12 +18,12 @@ const customTheme = extendTheme({
     //   500: "#00838e",
     //   300: "#4fb3be",
     // },
-    blackops:{
-      200:"rgba(0,0,0,0.2)"
+    blackops: {
+      200: "rgba(0,0,0,0.3)",
     },
-    whiteops:{
-      200:"rgba(255,255,255,0.2)"
-    }
+    whiteops: {
+      200: "rgba(255,255,255,0.3)",
+    },
   },
   components: {
     /** Example */
