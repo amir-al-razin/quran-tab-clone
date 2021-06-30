@@ -37,6 +37,22 @@ const customTheme = extendTheme({
     //   },
     // },
   },
+  styles: {
+    global: {
+      body: {
+        "&::-webkit-scrollbar": {
+          width: "4px",
+        },
+        "&::-webkit-scrollbar-track": {
+          width: "6px",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          background: "red.400",
+          borderRadius: "24px",
+        },
+      },
+    },
+  },
 });
 
 export default customTheme;
